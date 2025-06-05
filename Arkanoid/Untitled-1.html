@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Arkanoid</title>
+    <style>
+        /* Centraliza o canvas no meio da tela */
+        body {
+            display: flex;
+            justify-content: center; /*Centraliza horizontalmente */
+            align-items: center; /* Centraliza verticalmente */
+            height: 100vh; /* Define a altura como 100% da altura da tela visível */
+            margin: 0; /* remove as margens */
+            background-color: #222;
+        }
+
+        /* Container opcional para adicional posicionamento */
+        #game-container {
+            position: relative;
+        }
+
+        /* Canvas mantém sua resolução nativa via atributos width/height */
+        #canvas {
+            border: 2px solid #fff;   /* Borda branca para destaque */
+            background-color: #333;   /* Fundo interno do canvas */
+            display: block;           /* Remove espaçamento extra */
+        }
+    </style>
+</head>
+<body>
+    <div id="game-container">
+        <!-- Canvas com largura e altura intrínsecas para manter proporção -->
+        <canvas id="canvas" width="560" height="600"></canvas>
+    </div>
+    <!-- Script principal do jogo -->
+    <script src="game.js"></script>
+</body>
+</html>
